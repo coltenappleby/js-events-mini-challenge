@@ -67,6 +67,28 @@ function toggleColor(element) {
     }
 }
 
+// header.addEventListener('click', function() {header.toggleColor()})
+
+header.addEventListener('click', function() {
+    if (this.style.color === "green") {
+        this.style.color = "black"
+    } else {
+        this.style.color = "green"
+    }
+})
+
+// header.addEventListener('click', toggleColor())
+
 /***** Deliverable 2 *****/
+
+
+const likeButton = document.querySelector("#profile .like-button")
+let tempLike = traveler.likes
+
+likeButton.addEventListener('click', function() {
+    tempLike++
+    //console.log(tempLike)
+    likes.textContent = `${tempLike} Likes`
+})
 
 /***** Deliverable 3 *****/
